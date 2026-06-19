@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./dist/output.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+</head>
+
+<body>
+    <div class="min-h-screen flex dark:bg-black dark:text-white">
+        <aside class="w-72 bg-white border-r border-gray-400 p-3 hidden lg:block dark:bg-black">
+            <div class="flex gap-3">
+                <div
+                    class="bg-blue-600 text-white w-9 h-9 rounded-xl flex items-center justify-center font-bold text-lg ">
+                    B
+                </div>
+
+                <div class="text-xl font-bold">
+                    Boardly
+                </div>
+            </div>
+
+            <nav class="flex-1 px-4 py-4 space-y-2">
+                <a href="#quick" class="flex gap-4 items-center bg-blue-100 px-4 py-2 rounded-xl text-blue-600 font-bold">
+                    <i class="fa-regular fa-house"></i> 
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="" class="flex gap-4 items-center px-4 py-2 rounded-xl font-bold">
+                    <i class="fa-solid fa-users"></i>
+                    Users
+                </a>
+
+                <a href="" class="flex gap-4 items-center px-4 py-2 rounded-xl font-bold">
+                    <i class="fa-solid fa-briefcase"></i>
+                    Projects
+                </a>
+
+                <a href="" class="flex gap-4 items-center px-4 py-2 rounded-xl font-bold">
+                    <i class="fa-regular fa-square-check"></i>
+                    Tasks
+                </a>
+
+                <a href="" class="flex gap-4 items-center px-4 py-2 rounded-xl font-bold">
+                    <i class="fa-regular fa-comment"></i>
+                    Messages
+                </a>
+
+                <a href="" class="flex gap-4 items-center px-4 py-2 rounded-xl font-bold">
+                    <i class="fa-regular fa-file"></i>
+                    Documents
+                </a>
+
+                <a href="" class="flex gap-4 items-center px-4 py-2 rounded-xl font-bold">
+                    <i class="fa-regular fa-calendar"></i>
+                    Calendar
+                </a>
+
+                <a href="" class="flex gap-4 items-center px-4 py-2 rounded-xl font-bold">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </nav>
+
+            <div class="bg-gray-100 px-6 py-4 mt-20 rounded-lg dark:bg-purple-950">
+                <div>
+                    <div class="flex gap-3 items-center">
+                        <i class="fa-solid fa-crown text-yellow-400 text-xl"></i>
+                        <h3 class="font-bold text-xl">Upgrade to Pro</h3>
+                    </div>
+
+                    <div class="ml-7 mt-2 ">
+                        <p>Unlock all features and get more from Boardly </p>
+                    </div>
+
+                    <button class="bg-blue-200 w-full py-2 mt-4 text-blue-600 font-bold rounded-lg ">
+                        Upgrade Now
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="border-t border-gray-400 mt-6 pt-4 flex gap-3 items-center">
+                <div>
+                    <img src="./img/Profile picture 2.png" alt="" class="w-15 h-15 object-contain rounded-full">
+                </div>
+
+                <div class="flex">
+                    <div class="flex-1">
+                        <h3>John Doe</h3>
+                        <p>john.doe@example.com</p>
+                    </div>
+
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+            </div>
+
+        </aside>
+
+        <main class="flex-1 px-6 py-4">
+            <div class="lg:flex lg:justify-between flex:col">
+                <div class="relative flex items-center">
+                    <i class="fa-solid fa-magnifying-glass absolute left-2"></i>
+                    <input type="search" name="" id="" placeholder="Search anything..." class="px-10 border-2 border-gray-600 rounded-lg" />
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-bell"></i>
+
+                    <div class="flex gap-4">
+                        <img src="./img/Profile picture 2.png" alt="" class="w-9 h-9 object-contain rounded-full">
+                        <p class="font-bold">John Doe</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <section class="flex lg:justify-between py-6">
+                <div>
+                    <h3 class="font-bold text-2xl">Dashboard</h3>
+                    <p>Welcome back, john! Here's what's happening today</p>
+                </div>
+
+                <button class="bg-blue-700 px-4 py-1 rounded-lg text-white font-bold dark:bg-purple-950">
+                    + New Project
+                </button>
+            </section>
+
+            <section class="grid grid-cols-4 gap-4">
+                <!-- first part  -->
+                <div class="flex bg-gray-100 px-6 py-4 gap-4 dark:bg-purple-950">
+                    <div class="bg-blue-100 flex items-center justify-center px-7 rounded-xl">
+                        <i class="fa-solid fa-users text-blue-700 text-xl"></i>
+                    </div>
+
+                    <div>
+                        <p>Total Users</p>
+                        <h3 class="font-bold text-2xl">1,248</h3>
+                        <p>Active users</p>
+                    </div>
+                </div>
+
+                <!-- second part  -->
+
+                <div class="flex bg-gray-100 px-6 py-4 gap-4 dark:bg-purple-950">
+                    <div class="bg-green-100 flex items-center justify-center px-7 rounded-xl">
+                        <i class="fa-solid fa-briefcase text-green-700 text-xl"></i>
+                    </div>
+
+                    <div>
+                        <p>Projects</p>
+                        <h3 class="font-bold text-2xl">32</h3>
+                        <p>Active projects</p>
+                    </div>
+                </div>
+
+                <!-- third part  -->
+
+                <div class="flex bg-gray-100 px-6 py-4 gap-4 dark:bg-purple-950">
+                    <div class="bg-yellow-100 flex items-center justify-center px-7 rounded-xl">
+                        <i class="fa-regular fa-square-check text-yellow-700 text-xl"></i>
+                    </div>
+
+                    <div>
+                        <p>Tasks</p>
+                        <h3 class="font-bold text-2xl">156</h3>
+                        <p>Pending tasks</p>
+                    </div>
+                </div>
+
+
+                <!-- fourth part  -->
+
+                <div class="flex bg-gray-100 px-6 py-4 gap-4 dark:bg-purple-950">
+                    <div class="bg-purple-100 flex items-center justify-center px-7 rounded-xl">
+                        <i class="fa-regular fa-file text-purple-700 text-xl"></i>
+                    </div>
+
+                    <div>
+                        <p>Documents</p>
+                        <h3 class="font-bold text-2xl">89</h3>
+                        <p>Total Documents</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-4 flex gap-6">
+                <div class="flex-1 rounded-xl p-4 shadow-[0_0_20px_rgba(0,0,0,0.15)] dark:bg-purple-950">
+                    <div class="flex justify-between">
+                        <h4 class="font-bold text-xl">Recent Projects</h4>
+                        <button class="px-2 py-1 bg-gray-200 rounded-lg dark:text-black">View all</button>
+                    </div>
+
+                    <div class="py-4 px-5">
+                        
+                    <!-- 1st align -->
+                        <div class="flex justify-between border-t border-gray-400 pt-3 py-2">
+
+                            <div class="flex gap-4">
+                                <div class="bg-purple-100 w-15 h-15 text-purple-700 flex items-center justify-center font-bold rounded-xl text-2xl">
+                                    W
+                                </div>
+
+                                <div>
+                                    <h4 class="font-bold text-xl">Website Redesign</h4>
+                                    <p>Redesigning the corporate website</p>
+                                </div>
+                            </div>
+
+                            <div class="text-blue-700 bg-blue-100 px-3 w-fit h-fit py-1 rounded-xl">
+                                In Progress
+                            </div>
+                        </div>
+
+                        <!-- 2nd align -->
+                        <div class="flex justify-between border-t border-gray-400 pt-3 py-2">
+
+                            <div class="flex gap-4">
+                                <div class="bg-green-100 w-15 h-15 text-green-700 flex items-center justify-center font-bold rounded-xl text-2xl">
+                                    M
+                                </div>
+
+                                <div>
+                                    <h4 class="font-bold text-xl">Mobile App Development</h4>
+                                    <p>Building the new mobile application</p>
+                                </div>
+                            </div>
+
+                            <div class="text-blue-700 bg-blue-100 px-3 w-fit h-fit py-1 rounded-xl">
+                                In Progress
+                            </div>
+                        </div>
+
+                        <!-- 3rd align -->
+                        <div class="flex justify-between border-t border-gray-400 pt-3 py-2">
+
+                            <div class="flex gap-4">
+                                <div class="bg-yellow-100 w-15 h-15 text-yellow-700 flex items-center justify-center font-bold rounded-xl text-2xl">
+                                    S
+                                </div>
+
+                                <div>
+                                    <h4 class="font-bold text-xl">Marketing Campaign</h4>
+                                    <p>Q2 Marketing campaign planning</p>
+                                </div>
+                            </div>
+
+                            <div class="text-yellow-700 bg-yellow-100 px-3 w-fit h-fit py-1 rounded-xl">
+                                Pending
+                            </div>
+                        </div>
+
+                        <!-- 4th align -->
+                        <div class="flex justify-between border-t border-gray-400 pt-3 py-2">
+
+                            <div class="flex gap-4">
+                                <div class="bg-purple-100 w-15 h-15 text-purple-700 flex items-center justify-center font-bold rounded-xl text-2xl">
+                                    D
+                                </div>
+
+                                <div>
+                                    <h4 class="font-bold text-xl">Design System</h4>
+                                    <p>Creating a unified design system</p>
+                                </div>
+                            </div>
+
+                            <div class="text-green-700 bg-green-100 px-3 w-fit h-fit py-1 rounded-xl">
+                                Completed
+                            </div>
+                        </div>
+
+                        <!-- 5th align -->
+                        <div class="flex justify-between border-t border-gray-400 pt-3 ">
+
+                            <div class="flex gap-4 py-2">
+                                <div class="bg-blue-100 w-15 h-15 text-blue-700 flex items-center justify-center font-bold rounded-xl text-2xl">
+                                    R
+                                </div>
+
+                                <div>
+                                    <h4 class="font-bold text-xl">Research Project</h4>
+                                    <p>User research and analysis</p>
+                                </div>
+                            </div>
+
+                            <div class="text-yellow-700 bg-yellow-100 px-3 w-fit h-fit py-1 rounded-xl">
+                                Pending
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-1 rounded-xl p-4 shadow-[0_0_20px_rgba(0,0,0,0.15)] dark:bg-purple-950">
+                    <div class="flex justify-between">
+                        <h4 class="font-bold text-xl">Recent Activity</h4>
+                        <button class="px-2 py-1 bg-gray-200 rounded-lg dark:text-black">View all</button>
+                    </div>
+
+                    <!-- Edit 1 -->
+                    <div class="py-4 px-5">
+                        <div class="flex justify-between py-2">
+
+                            <div class="flex gap-4">
+                                <div class="bg-green-100 w-15 h-15 text-green-700 flex items-center justify-center font-bold rounded-xl text-2xl">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-bold text-xl">New user registered</h4>
+                                    <p><span class="font-semibold text-light">Jane Smith</span> joined the platform</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                2m ago
+                            </div>
+                        </div>
+
+                        <!-- Edit 2 -->
+                        <div class="flex justify-between py-2">
+
+                            <div class="flex gap-4">
+                                <div class="bg-blue-100 w-15 h-15 text-blue-700 flex items-center justify-center font-bold rounded-xl text-2xl">
+                                   <i class="fa-regular fa-file"></i>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-bold text-xl">Project updated</h4>
+                                    <p>Website Redesign project was updated</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                15m ago
+                            </div>
+                        </div>
+
+                        <!-- Edit 3 -->
+                        <div class="flex justify-between py-2">
+
+                            <div class="flex gap-4">
+                                <div class="bg-yellow-100 w-15 h-15 text-yellow-700 flex items-center justify-center font-bold rounded-xl text-2xl">
+                                   <i class="fa-regular fa-square-check"></i>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-bold text-xl">Task Completed</h4>
+                                    <p>Design system task was completed</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                1h ago
+                            </div>
+                        </div>
+
+                        <!-- Edit 4 -->
+                        <div class="flex justify-between py-2">
+
+                            <div class="flex gap-4">
+                                <div class="bg-purple-100 w-15 h-15 text-purple-700 flex items-center justify-center font-bold rounded-xl text-2xl">
+                                   <i class="fa-regular fa-file"></i>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-bold text-xl">Document uploaded</h4>
+                                    <p>Project requirements pdf uploaded</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                2h ago
+                            </div>
+                        </div>
+
+                        <!-- Edit 5 -->
+                        <div class="flex justify-between py-2">
+
+                            <div class="flex gap-4">
+                                <div class="bg-red-100 w-15 h-15 text-red-700 flex items-center justify-center font-bold rounded-xl text-2xl">
+                                   <i class="fa-regular fa-comment"></i>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-bold text-xl">New Message</h4>
+                                    <p>Sarah sent you a message</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                3h ago
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="quick" class="rounded-xl p-4 shadow-[0_0_20px_rgba(0,0,0,0.15)] dark:bg-purple-950">
+                <h3 class="font-bold text-xl py-4">Quick Actions</h3>
+
+                <div class="flex gap-8">
+                    <div class="flex gap-5 rounded-xl p-4 shadow-[0_0_20px_rgba(0,0,0,0.15)]">
+                        <div class="bg-blue-100 w-15 h-15 text-blue-700 flex items-center justify-center font-bold rounded-xl text-2xl">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold text-xl ">Create Project</h4>
+                            <p>Start a new project</p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex gap-5 rounded-xl p-4 shadow-[0_0_20px_rgba(0,0,0,0.15)]">
+                        <div class="bg-green-100 w-15 h-15 text-green-700 flex items-center justify-center font-bold rounded-xl text-2xl">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold text-xl">Add Task</h4>
+                            <p>Create a new task</p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex gap-5 rounded-xl p-4 shadow-[0_0_20px_rgba(0,0,0,0.15)]">
+                        <div class="bg-purple-100 w-15 h-15 text-purple-700 flex items-center justify-center font-bold rounded-xl text-2xl">
+                            <i class="fa-solid fa-upload"></i>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold text-xl">Upload Document</h4>
+                            <p>Upload a new document</p>
+                        </div>
+                    </div>
+
+                     <div class="flex gap-5 rounded-xl p-4 shadow-[0_0_20px_rgba(0,0,0,0.15)]">
+                        <div class="bg-blue-100 w-15 h-15 text-blue-700 flex items-center justify-center font-bold rounded-xl text-2xl">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </div>
+
+                            <div>
+                                <h4 class="font-bold text-xl">Invite User</h4>
+                                <p>Invite team members</p>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
